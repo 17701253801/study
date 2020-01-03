@@ -2,4 +2,6 @@
 
 BOOTNAME=$1
 
-echo $BOOTNAME
+echo '$1='$BOOTNAME
+echo '$?='$?
+echo '$0='$0
