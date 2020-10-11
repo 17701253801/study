@@ -1,7 +1,9 @@
 package com.example.demo.web;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,4 +22,15 @@ public class UploadController {
     public String test() {
         return "Success!";
     }
+
+    @GetMapping("/user/{id}")
+    public String testRestfull(@PathVariable String id) {
+        return id;
+    }
+
+    @PutMapping("/user/put/{name}")
+    public String getPut(@PathVariable String name) {
+        return name;
+    }
+
 }
