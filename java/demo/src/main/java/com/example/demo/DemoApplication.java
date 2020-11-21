@@ -10,4 +10,18 @@ public class DemoApplication {
         SpringApplication.run(DemoApplication.class, args);
     }
 
+    public String getName() {
+        String name = "suntong";
+        if (name.equals("java")) {
+            return name;
+        }
+        switch (name) {
+        case "java":
+            return "1";
+        default:
+            break;
+        }
+        return "ssasas";
+    }
+
 }
