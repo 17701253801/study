@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"context"
+	"fmt"
+)
 
 type Person struct {
 	Name string `json:"name"`
@@ -8,6 +11,5 @@ type Person struct {
 }
 
 func main() {
-	fmt.Println("Hello World!")
-	fmt.Println("Hello world")
+	context.WithCancel()
 }
